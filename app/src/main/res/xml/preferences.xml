@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:title="@string/vibration"
+        android:key="vibration_key"
+        android:defaultValue="true"
+        android:checked="true"/>
+
+    <SwitchPreference
+        android:title="@string/sound"
+        android:key="sound_key"
+        android:defaultValue="true"
+        android:checked="true"/>
+
+    <SwitchPreference
+        android:title="@string/music"
+        android:key="toggle_music_key"
+        android:defaultValue="true"
+        android:checked="true"/>
+
+    <ListPreference
+        android:title="@string/background"
+        android:key="background_picture_key"
+        android:defaultValue="1"
+        android:entries="@array/list_of_backgrounds"
+        android:entryValues="@array/list_of_backgrounds_values"/>
+
+    <ListPreference
+        android:title="@string/theme"
+        android:key="theme_key"
+        android:defaultValue="1"
+        android:entries="@array/list_of_themes"
+        android:entryValues="@array/list_of_themes_values"/>
+
+    <ListPreference
+        android:title="@string/background_music"
+        android:key="background_music_key"
+        android:defaultValue="1"
+        android:entries="@array/list_of_musics"
+        android:entryValues="@array/list_of_musics_values"/>
+
+</PreferenceScreen>

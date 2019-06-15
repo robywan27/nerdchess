@@ -1,0 +1,881 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_play"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:background="@drawable/background1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+
+        <TextView
+            android:id="@+id/actionToBeDone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:textColorHighlight="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textColor="@android:color/holo_blue_bright" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
+        <TextView
+            android:id="@+id/vitalities_space"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:textColorHighlight="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textColor="@android:color/holo_green_light" />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="60"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+            </LinearLayout>
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="94"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:orientation="vertical"
+            android:background="@drawable/fantasy_board"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/life_row_1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="4"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp">
+
+                <FrameLayout
+                    android:id="@+id/life_cell_1_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/life_cell_1_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/life_cell_1_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/life_cell_1_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/life_cell_1_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/life_cell_1_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/row_1"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="12"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp">
+
+                <FrameLayout
+                    android:id="@+id/cell_1_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/cell_1_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/cell_1_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/cell_1_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/cell_1_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/cell_1_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/life_row_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="4"
+                    android:paddingBottom="0dp"
+                    android:paddingTop="0dp">
+
+                    <FrameLayout
+                        android:id="@+id/life_cell_2_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="16.5">
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/life_cell_2_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="16.5">
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/life_cell_2_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="16.5">
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/life_cell_2_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="16.5">
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/life_cell_2_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="16.5">
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/life_cell_2_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="16.5">
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                android:id="@+id/row_2"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="12"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp">
+
+                <FrameLayout
+                    android:id="@+id/cell_2_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/cell_2_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/cell_2_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/cell_2_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/cell_2_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/cell_2_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/life_row_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="4"
+                    android:paddingBottom="0dp"
+                    android:paddingTop="0dp">
+
+                    <FrameLayout
+                        android:id="@+id/life_cell_3_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="16.5">
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/life_cell_3_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="16.5">
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/life_cell_3_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="16.5">
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/life_cell_3_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="16.5">
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/life_cell_3_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="16.5">
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/life_cell_3_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="16.5">
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                android:id="@+id/row_3"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="12"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp">
+
+                <FrameLayout
+                    android:id="@+id/cell_3_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/cell_3_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/cell_3_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/cell_3_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/cell_3_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/cell_3_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/life_row_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="4"
+                    android:paddingBottom="0dp"
+                    android:paddingTop="0dp">
+
+                    <FrameLayout
+                        android:id="@+id/life_cell_4_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="16.5">
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/life_cell_4_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="16.5">
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/life_cell_4_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="16.5">
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/life_cell_4_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="16.5">
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/life_cell_4_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="16.5">
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/life_cell_4_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="16.5">
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                android:id="@+id/row_4"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="12"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp">
+
+                <FrameLayout
+                    android:id="@+id/cell_4_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/cell_4_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/cell_4_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/cell_4_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/cell_4_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/cell_4_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/life_row_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="4"
+                    android:paddingBottom="0dp"
+                    android:paddingTop="0dp">
+
+                    <FrameLayout
+                        android:id="@+id/life_cell_5_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="16.5">
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/life_cell_5_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="16.5">
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/life_cell_5_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="16.5">
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/life_cell_5_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="16.5">
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/life_cell_5_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="16.5">
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/life_cell_5_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="16.5">
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                android:id="@+id/row_5"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="12"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp">
+
+                <FrameLayout
+                    android:id="@+id/cell_5_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/cell_5_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+                </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/cell_5_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="16.5">
+                    </FrameLayout>
+
+                    <FrameLayout
+                    android:id="@+id/cell_5_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/cell_5_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/cell_5_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/life_row_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="4"
+                    android:paddingBottom="0dp"
+                    android:paddingTop="0dp">
+
+                    <FrameLayout
+                        android:id="@+id/life_cell_6_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="16.5">
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/life_cell_6_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="16.5">
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/life_cell_6_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="16.5">
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/life_cell_6_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="16.5">
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/life_cell_6_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="16.5">
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/life_cell_6_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="16.5">
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                android:id="@+id/row_6"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="12"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp">
+
+                <FrameLayout
+                    android:id="@+id/cell_6_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/cell_6_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/cell_6_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/cell_6_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/cell_6_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/cell_6_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16.5">
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3">
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12">
+
+        <FrameLayout
+            android:id="@+id/move_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="15">
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/attack_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="15">
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/freeze_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="15">
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/heal_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="15">
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/revive_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="15">
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/teleport_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="15">
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="85"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="29">
+
+            <Button
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:id="@+id/back_button"
+                android:onClick="backButtonClick"
+                android:background="@drawable/fantasy_back" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="29">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="29">
+
+                <Button
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/restart_button"
+                    android:onClick="restartButtonClick"
+                    android:background="@drawable/fantasy_restart" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3">
+            </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>

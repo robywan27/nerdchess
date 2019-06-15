@@ -1,0 +1,196 @@
+<resources>
+    <string name="app_name">Nerd Chess</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- select player activity -->
+    <string name="white_player">FIRST PLAYER</string>
+    <string name="black_player">SECOND PLAYER</string>
+    <string name="confirm_white_player_button">Confirm</string>
+    <string name="confirm_black_player_button">Confirm</string>
+
+    <!-- settings -->
+    <string name="vibration">Toggle Vibration</string>
+    <string name="sound">Toggle Sound</string>
+    <string name="music">Toggle Music</string>
+    <string name="background">Background Picture</string>
+    <string name="theme">Theme</string>
+    <string name="background_music">Background Music</string>
+
+    <!-- exit dialog in play activity -->
+    <string name="exit_dialog">Are you sure you want to quit this game?</string>
+    <string name="positive_button">Yes</string>
+    <string name="negative_button">No</string>
+
+    <!-- tutorial -->
+    <string name="tutorial_title">Instant Tutorial</string>
+    <string name="tutorial_first_part">
+        Welcome in NerdChess, a game app in which you can play a fantasy-themed chess-like game.
+		\nThis tiny tutorial will give you enough instructions to start playing a game asap. If you want to read the game rules,
+          go on with the next sections.
+		\nThere are three choices of game you can make in this app:
+			\n\t1. 2P Local game: you can play a match against a human opponent on the same device
+			\n\t2. 1P Ai game: you can play a match against an artificial intelligence, which has two levels of difficulty: easy and hard
+			\n\t3. 2P Online game: you can play a match against another human opponent even remotely; in this mode, both players will need
+                   access to a network connection
+		\nOnce you’ve selected one of the three choices, you can start a game.
+    </string>
+    <string name="tutorial_second_part">
+        In the picture above you can see how a game is structured.
+		\nAt the top of the screen there is a text which you should read to know the next actions to accomplish: which turn it is,
+          what action should this player perform.
+		\nBelow that, there is a chessboard on which there are the pieces: first (white) player’s pieces on the left and his opponent’s
+          (black) pieces on the right. Above each piece you can see a numbered bar, indicating its vitality; as soon as it reaches zero,
+          the piece dies and is removed from the game. A player, in his turn, can touch only one among the pieces of his color.
+          After a piece has been selected, some of the buttons below the chessboard will be highlited, based on which actions
+          are available for that piece.
+    </string>
+    <string name="tutorial_third_part">
+        As you can see from the picture above, there are six buttons, one for moving a piece, one for attacking and the other four
+        to cast spells (only available to the mage). Starting from left to right:
+			\n\t- M, allows a piece to move to any legal cell on the board within its move range
+			\n\t- A, allows a piece to attack any enemy piece within its attack range
+			\n\t- F, allows the mage to freeze an opponent piece
+			\n\t- H, allows the mage to heal an allied piece
+			\n\t- R, allows the mage to revive an allied piece
+			\n\t- T, allows the mage to teleport an allied piece from its cell to a target cell
+		\nFinally, at the bottom of the screen there are two buttons:
+			\n\t- Back button: when it’s pressed, you go back to the menu saving the state of the game; be aware that if you start a different type of game or enter different player names, the game will be resumed from zero
+			\n\t- Restart button: click this button if you want to resume a new game from the start
+
+		\n\nIf you want to continue reading the game rules, press next button on top of the screen.
+    </string>
+
+    <!-- game rules in classic_help activity -->
+    <string name="first_help_page">1/9</string>
+    <string name="second_help_page">2/9</string>
+    <string name="third_help_page">3/9</string>
+    <string name="fourth_help_page">4/9</string>
+    <string name="fifth_help_page">5/9</string>
+    <string name="sixth_help_page">6/9</string>
+    <string name="seventh_help_page">7/9</string>
+    <string name="eighth_help_page">8/9</string>
+    <string name="ninth_help_page">9/9</string>
+
+    <string name="game_description_title">Game Description</string>
+    <string name="game_rules_title">Game Rules</string>
+    <string name="piece_types_title">Piece Types</string>
+    <string name="game_move_rules_title">Move Rules</string>
+    <string name="game_attack_rules_title">Attack Rules</string>
+    <string name="game_combat_rules_title">Combat Rules</string>
+    <string name="mages_and_squires_rules_title">Mages and Squires</string>
+    <string name="spells_rules_title">Spells Rules</string>
+    <string name="end_of_game_rules_title">End of Game Rules</string>
+
+    <string name="game_description">
+        NerdChess is a chess-like board game, but its rules are even easier:
+        \n• There are two players, each with a color (default colors are white and black) and a number of pieces of different kinds
+        \n• The board consists of 6x6 cells
+        \n• The goal is to occupy three out of four special cells (highlighted in orange) in the board with one’s own pieces or to kill
+        all the opponent’s pieces
+    </string>
+    <string name="game_rules">
+        The game rules are the following:
+        \n• White moves first
+        \n• Players alternate turns in a round robin fashion
+        \n• A turn consists in one of the following actions:
+            \n\t– Moving a chosen piece of one’s own side
+            \n\t– Attacking an opponent’s piece
+            \n\t– Casting a spell
+        \n• Each piece type has different characteristics:
+            \n\t– The way it can move on the board
+            \n\t– The way it can attack other pieces
+            \n\t– Its vitality
+        \n• The effect of an attack is to reduce an opponent’s piece vitality
+        \n• If vitality is 0, the piece is killed and removed from the board
+        \n• The goal is to occupy three special cells or to kill all of the opponent’s pieces
+    </string>
+    <string name="piece_types">
+        The pieces have the following stats:
+        <!--\n\tInitial Vitality        \tMove                    \tAttack
+                                \n\t\tRange Directions Type   \tRange Strength Directions
+        \nGiant   5                       \t2   horiz+vert walk        \t1    4       horiz/vert
+        \nDragon  6                       \t3   horiz+vert flight      \t2    3       horiz/vert
+        \nMage    7                       \t1   any walk               \tn.a. 2       n.a.
+        \nArcher  5                       \t2   any walk               \t3    2       horiz/vert
+        \nSquire  3                       \t1   horiz+vert walk        \tn.a. 1       n.a.
+        \nKnight  4                       \t1   any walk               \t1    2       diagonal-->
+    </string>
+    <string name="game_move_rules">
+        The rules regarding the move of the pieces are the following:
+        \n• A piece can either “walk” or “fly” in the specified directions (horizontally, vertically or diagonally) of
+        up to as many cells as allowed by the move range
+        \n• Flying means that the piece can land to any cell in its range regardless of whether the cells it crosses
+        are occupied or not (i.e., “flying over” the cells)
+        \n• Walking means that the piece can only move through empty cells
+        \n• In both cases, the destination cell can be either empty or occupied by an opponent’s piece
+    </string>
+    <string name="game_attack_rules">
+        The rules regarding the attack of the pieces are the following:
+        \n• A piece A can attack an opponent’s piece B if
+            \n\t– B is within A’s attack range along one of the allowed attack directions
+            \n\t\t• Unlike moves, the same direction must be kept for the entire range (e.g., an Archer can attack 3 cells horizontally,
+            but not 2 horizontally + 1 vertically)
+            \n\t– There is no other piece between A and B along the attack direction
+        \n• When B is attacked by A
+            \n\t– B’s vitality is diminished by an amount equal to A’s strength; vitality can go down to a minimum of 0
+            \n\t– If B’s vitality goes to 0, B is killed and removed from the board
+    </string>
+    <string name="game_combat_rules">
+        The rules regarding the combat among pieces are the following:
+        \n• If a move makes a piece arrive at a cell occupied by an opponent’s piece, they start a combat
+            \n\t– At the end of the combat, one of the pieces (or both) will be killed, depending on their vitality and attack strength
+        \n• The combat happens in the moving player’s turn and works as follows:
+            \n\t– Both pieces diminish their vitality by an amount equal to their opponent’s strength
+            \n\t– This is repeated until one or both pieces are killed
+        \n• Special cases (interaction with spells):
+            \n\t– If one of the two pieces is frozen (see spells, later), the frozen piece is killed
+            and the other piece preserves its vitality unchanged
+            \n\t– If both pieces are frozen (might happen by teleport, see spells), both are killed
+        \n• Example: If a Giant with vitality 5 (strength 4) combats against a Mage with vitality 7 (strength 2), at the end
+        of the combat the Mage is killed and the Giant remains alive with vitality 1
+    </string>
+    <string name="mages_and_squires_rules">
+        For what regards mages and squires, they follow some different rules with respect to the other pieces:
+        \n• Mages and Squires cannot perform attacks
+            \n\t– Their attack range is 0
+            \n\t– They can engage in combats, though, so their strength is greater than 0
+        \n• Mages can cast spells
+            \n\t– Any spell can only be cast once by a mage
+            \n\t– No spell can involve a special cell or a cell where a mage lies
+            \n\t– If the player’s mage is killed or frozen, the player cannot cast any spell
+    </string>
+    <string name="spells_rules">
+        The rules regarding the spells cast by the mage are the following:
+        \n• Heal: restore the initial vitality of a player’s piece
+            \n\t– The piece cannot be in a special cell! The piece cannot be the mage!
+            \n\t– The piece cannot be killed
+        \n• Teleport: move a selected piece to any cell
+            \n\t– The source cell must be occupied by a player’s piece
+            \n\t– The destination cell must be either free or occupied by an opponent’s piece (in the latter case there will be a combat)
+            \n\t– Neither cell can be special. Neither cell can be occupied by a mage.
+        \n\t• Freeze: a selected opponent’s piece is frozen (and thus cannot move and cannot
+        attack) for the opponent’s next 3 turns. Right at the end of the opponent’s 3rd turn, it’s unfrozen
+            \n\t– The piece must not be in a special cell. The piece must not be a mage.
+        \n• Revive: bring back a player’s killed piece with its initial vitality and unfrozen
+            \n\t– Its new position will be the initial position
+                \n\t\t• A squire or knight may also be brought back to the position of its twin
+            \n\t– The revived piece’s new position must be either free or occupied by an opponent’s piece
+                \n\t\t• in the latter case there will be a combat
+    </string>
+    <string name="end_of_game_rules">
+        The game ends when any of the following rules apply:
+        \n• A player P wins when:
+            \n\t– P’s pieces occupy three special cells, or
+            \n\t– P’s opponent’s pieces are all either killed or frozen and P has at least one non-killed and non-frozen piece
+        \n• If, when it’s P’s turn, P cannot move (all of P’s pieces are either killed or frozen) and P’s
+        opponent hasn’t won, then the game ends in a draw
+    </string>
+
+    <string name="player">HUMAN PLAYER</string>
+    <string name="ai_player">COMPUTER</string>
+    <string name="set_your_name">SET HERE YOUR NAME</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Backgrounds -->
+    <string-array name="list_of_backgrounds">
+        <item>Background 1</item>
+        <item>Background 2</item>
+        <item>Background 3</item>
+        <item>Background 4</item>
+        <item>Background 5</item>
+        <item>Background 6</item>
+        <item>Background 7</item>
+    </string-array>
+
+    <string-array name="list_of_backgrounds_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+
+    <!-- Themes -->
+    <string-array name="list_of_themes">
+        <item>Fantasy Theme</item>
+        <item>Classic Theme</item>
+    </string-array>
+
+    <string-array name="list_of_themes_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+
+    <!-- Musics -->
+    <string-array name="list_of_musics">
+        <item>Menu Medieval Tune</item>
+        <item>Medieval Theme Tune</item>
+        <item>Cobblestone Village Tune</item>
+        <item>Black Wolf Inn Tune</item>
+        <item>Wild Boar Inn Tune</item>
+        <item>Epic Tune</item>
+    </string-array>
+
+    <string-array name="list_of_musics_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    
+</resources>
