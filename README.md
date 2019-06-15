@@ -1,5 +1,5 @@
 # NerdChess
-An Android chess-like app, developed as a University project as a two-persons effort.
+An Android chess-like app, developed as a University project as a two-persons effort in collaboration with https://github.com/florin7.
 
 The gameplay is reminiscent of chess, although some different rules are applied. Please consult the file https://github.com/robywan27/nerdchess/blob/master/NerdChess_GamePlay.pdf for understanding the rules of this game.
 
