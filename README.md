@@ -11,6 +11,5 @@ In addition to the basic functionality of the app, two points have been partiall
 
 ![alt text](images/home.jpg "NerdChess home screen")
 ![alt text](images/start_game.jpg "Game start")
-![alt text](images/choose_action.jpg "Choose next action")
 ![alt text](images/frozen_piece.jpg "Enemy piece has been frozen!")
 ![alt text](images/towards_endgame.jpg "Towards games closure")
