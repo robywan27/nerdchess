@@ -9,4 +9,8 @@ In addition to the basic functionality of the app, two points have been partiall
 - An artificial intelligence to play against the computer. It is advisable to play only the easy AI level, because the hard AI level takes a fairly long time to make calculations.
 - A server connection enhancement which allows two players to play at two remote locations with their own device. This functionality is probably not functioning at all now.
 
-![alt text](screenshots/nerdchess_home.png "NerdChess home screen")
+![alt text](images/home.jpg "NerdChess home screen")
+![alt text](images/start_game.jpg "Game start")
+![alt text](images/choose_action.jpg "Choose next action")
+![alt text](images/frozen_piece.jpg "Enemy piece has been frozen!")
+![alt text](images/towards_endgame.jpg "Towards games closure")
